@@ -137,6 +137,7 @@ export class CdkStackJavaApp extends cdk.Stack {
       actionName: 'CodeCommit',
       repository,
       output: sourceOutput,
+      branch: 'master',
     });
 
     const mavenBuildOutput = new codepipeline.Artifact();
